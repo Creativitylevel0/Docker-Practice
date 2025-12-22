@@ -14,6 +14,7 @@ ENV PATH="/code/.venv/bin:$PATH"
 
 # RUN pip install pandas pyarrow (Not needed since we copied all files directly)
 
-COPY pipeline.py .
+COPY ingest_data.py .  
+#Before it was pipeline.py since I was testing how to run some code inside docker.
 
-ENTRYPOINT [ "python","pipeline.py" ]
+ENTRYPOINT [ "python","ingest_data.py" ]

@@ -1,0 +1,11 @@
+Dowload keys json file from GCP->IAM->service account-> Select Account ->keys ->json file
+
+Run the following commands
+->export GOOGLE_APPLICATION_CREDENTIALS='./keys/my-creds.json'      Saves your path of service account credentials
+->echo $GOOGLE_APPLICATION_CREDENTIALS                              Shows the saved path
+
+How to run terraform file you created. (after above steps)
+->Terraform init ->Initializes the file after it you can work on the file
+->terraform plan ->Terraform used the selected providers to generate the following execution plan. Shows the specification whats going to be created and planning
+->terraform apply -> Create all the resources according to the plan 
+->terraform destroy -> Deletes all the resources created

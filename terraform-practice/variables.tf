@@ -6,30 +6,30 @@ variable "credentials" {
 
 variable "project" {
   description = "Project-Name"
-  default     = "eighth-server-482112-j4"
+  default     = "bigquery-sandbox-483016"
 }
 variable "region" {
   description = "Region Name"
-  default     = "us-central1"
+  default     = "europe-west2"
 }
 
 
 variable "location" {
 
   description = "Project Location"
-  default     = "US"
+  default     = "europe-west2"
 }
 
 variable "bq_dataset_name" {
 
   description = "My BigQuery Dataset Name"
-  default     = "demo_dataset"
+  default     = "zoomcamp"
 }
 
 variable "gcs_bucket_name" {
 
   description = "My Storage Bucket Name"
-  default     = "eighth-server-482112-j4-terra-bucket"
+  default     = "gaurav-kestra-zoomcamp-bucket"
 }
 variable "gcs_storage_class" {
   description = "Bucket Storage Class"
